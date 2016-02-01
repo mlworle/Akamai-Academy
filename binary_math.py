@@ -3,6 +3,8 @@
 
 # Review: binary math 
 
+import random
+
 # Getting lazy. One RTFM for all.
 def rtfm():
   print "Bummer. Check your notes and try again. I don\'t mean to be mean, but there are a lot of commands and I have limited attention span to write thes, so I\'m not going to put this in another loop and keep checking if the answe3rs are right or if they were typed correctly or case matters, blahblahblah. So just start the program over. Thanks!"
@@ -18,11 +20,19 @@ place_values = raw_input(" ... ")
 
 print "Bravo! You may continue.\r\n\n"
 
-# 2nd Gate: basic df command
-#print "At the virtual command line prompt type the command to run disk free. THis is the basic no-frills command. We'll get into more fancy stuff in a second.\r\n"
 
-# 3rd Gate: human readable form
-#print "Now type in the command for running disk free with more easily understood output. (Hint: read this if you really want to because you are a human not a computer.) \r\n"
-#print "Awesome! You Rock and Roll! We are done. Go on to the next command, or not. \r\n"
+# Much practice
+def conversion():
+  decimal_number = random.randrange(0,100)
+  answer = raw_input("Convert " + decimal_number + " to binary: ")
+  print answer
+  while answer != str(bin(decimal_number)):
+    answer = raw_input("Try again: ")
+  print "Bravo!"
 
-# 4th Gate: all others are false
+
+# Main
+keep_trying = True
+while keep_trying == True:
+  conversion()
+print "Thank you for playing."
