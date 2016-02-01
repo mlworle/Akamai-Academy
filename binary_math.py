@@ -24,9 +24,10 @@ print "Bravo! You may continue.\r\n\n"
 # Much practice
 def conversion():
   decimal_number = random.randrange(0,100)
-  answer = raw_input("Convert " + decimal_number + " to binary: ")
-  print answer
-  while answer != str(bin(decimal_number)):
+  answer = raw_input("Convert " + str(decimal_number) + " to binary: ")
+  print("0b" + answer)
+  print(bin(decimal_number))
+  while "0b" + answer != str(bin(decimal_number)):
     answer = raw_input("Try again: ")
   print "Bravo!"
 
@@ -35,4 +36,7 @@ def conversion():
 keep_trying = True
 while keep_trying == True:
   conversion()
+  keep_on = raw_input("Would you like to continue? y or n ")
+  if keep_trying == "y": keep_trying = True
+  else: keep_trying = False
 print "Thank you for playing."
