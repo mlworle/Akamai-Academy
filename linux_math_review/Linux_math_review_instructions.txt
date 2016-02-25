@@ -1,0 +1,12 @@
+These files are intended to provide a review of some commands used in the Linux portion of Akamai Technical Academy.
+
+YOu will need a Unix or Linux operating system in order to perform the functions. 
+The files are written in Python. Yep, that's right. PYTHON! Most Linux OS's have Python 2.7 as standard. If not you can try downloading it from www.python.org. The code is written in version 2.7 NOT version 3.5
+
+Once you have Python installed, just run the script. It is run by typing python then the file name. Here is an example:
+$ python du.py
+
+Good Luck!
+
+Mara Worle
+02/2016
