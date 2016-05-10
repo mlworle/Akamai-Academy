@@ -1,0 +1,40 @@
+#!/bin/bash
+
+get user input
+check if the input is
+   name
+   uid
+   terminal
+   ip
+   date/time
+go to command line
+check if input is detected
+  use w command
+  use who command
+  if detected
+      tell user 'yes'
+  else
+      tell user 'no'
+
+check log of logins using last
+   if user logged in
+      tell user when
+   else
+      tell user not on
+
+check all systems list
+   get list of systems online now
+   if online and on list
+      tell user these systems are online
+   else
+      tell user these systems are offline
+
+activate cron
+   user input to activate cro
+   prompt user for the time
+   at time indicated
+      check who to see online users
+      find offline users by diff with log of users
+      print to stout users online and offline
+
+   post users online and offline at indicated time intervals
